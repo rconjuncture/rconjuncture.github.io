@@ -89,6 +89,46 @@
   a {
     color: #FF0000;
   }
+  .image-swap-container {
+    position: relative;
+    float: left;
+    width: 75%;
+    margin: 10px;
+    }
+
+    .image-swap-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
+    .image-swap-container img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    }
+
+    .image-swap-container:hover img.hover-image {
+    opacity: 1;
+    }
+
+    .image-swap-container:hover img.default-image {
+    opacity: 0;
+    }
+    .image-swap-container caption {
+    width: 40%;
+    background: rgba(0, 0, 0, 0);
+    color: #000000;
+    text-align: left;
+    line-height: 1.4;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    }
+    .image-swap-container:hover caption {
+      opacity: 1;
+    }
 </style>
 
 <h1 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h1><p><strong>女 07&#x2F;20</strong><br><strong>170cm&#x2F;55kg AB型</strong></p>
@@ -129,8 +169,12 @@
     <img src="/images/SW/SW2.PNG">
     <div class="caption">2024年生賀：Auditory Cortex。</div>
   </div>
+  <div class="image-swap-container">
+    <img src="/images/SW/SW3.PNG" class="default-image" title="2025年生賀：家庭-生態圈2號。">
+    <img src="/images/SW/SW3a.PNG" class="hover-image" title="黑夜">
+    <div class="caption">2025年生賀：家庭-生態圈2號。</div>
+  </div>
 </div>
-
   </div>
   <div class="post-footer">
     

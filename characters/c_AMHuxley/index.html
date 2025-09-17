@@ -96,26 +96,41 @@
     margin: 10px;
     }
 
-    .image-swap-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-    }
+  .image-swap-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  }
 
-    .image-swap-container img.hover-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    }
+  .image-swap-container img.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  }
 
-    .image-swap-container:hover img.hover-image {
+  .image-swap-container:hover img.hover-image {
+  opacity: 1;
+  }
+
+  .image-swap-container:hover img.default-image {
+  opacity: 0;
+  }
+
+  .image-swap-container caption {
+  width: 40%;
+  background: rgba(0, 0, 0, 0);
+  color: #000000;
+  text-align: left;
+  line-height: 1.4;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  }
+  .image-swap-container:hover caption {
     opacity: 1;
-    }
+  }
 
-    .image-swap-container:hover img.default-image {
-    opacity: 0;
-    }
 </style>
 
 
@@ -148,11 +163,11 @@
   <div class="image-container">
     <img src="/images/AMH/AMH1.jpg">
     <div class="caption">概念作品：隨機生成迷宮。</div>
-</div>
-
-<div class="image-swap-container">
-  <img src="/images/AMH/AMH2.PNG" class="default-image" title="2025年生賀：手部動作。">
-  <img src="/images/AMH/AMH2a.PNG" class="hover-image" title="尋找？">
+  </div>
+  <div class="image-swap-container">
+    <img src="/images/AMH/AMH2.PNG" class="default-image" title="2025年生賀：手部動作。">
+    <img src="/images/AMH/AMH2a.PNG" class="hover-image" title="尋找？">
+    <div class="caption">2025年生賀：手部動作。</div>
 </div>
 
   </div>
